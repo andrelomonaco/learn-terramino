@@ -55,6 +55,9 @@
 
   $url = "http://169.254.169.254/latest/meta-data/ami-id";
   $ami_id = file_get_contents($url);
+
+  $headers = apache_request_headers(); 
+  $real_client_ip = $headers["X-Forwarded-For"];
   ?>
 
 <body>
@@ -64,6 +67,7 @@
       <p><span class="attribute-name">AMI ID:</span><code><?php echo $ami_id; ?></code></p>
       <p><span class="attribute-name">Instance ID:</span><code><?php echo $instance_id; ?></code></p>
       <p><span class="attribute-name">Availability Zones:</span><code><?php echo $zone; ?></code></p>
+      <p><span class="attribute-name">Real IP:</span><code><?php echo $real_client_ip; ?></code></p>
       <p>Use left and right arrow keys to move blocks.<br />Use up arrow key to flip block.</p>
     </div>
     <div class="content">
