@@ -12,7 +12,7 @@
     }
 
     body {
-      background-image: url("https://github.com/hashicorp/learn-terramino/raw/master/background.png");
+      background-image: url("https://github.com/andrelomonaco/learn-terramino/raw/master/background.png");
       display: flex;
       align-items: center;
       justify-content: center;
