@@ -3,7 +3,7 @@
 
 <head>
   <title>Terramino</title>
-  <link rel="icon" href="https://www.terraform.io/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://www.iconfinder.com/icons/4047379/app_development_end_front_frontend_icon" type="image/x-icon" />
   <style>
     html,
     body {
